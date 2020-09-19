@@ -1,0 +1,22 @@
+<section class="header-contaner">
+
+    <section class="title">
+        <img src="../../../../../assets/icon.jpg" width="140" height="60" alt="">
+    </section>
+
+    <section class="create">
+        <button mat-mini-fab matTooltip="Crear nuevo paciente" color="primary" (click)="openDialogCreateUpdate()">
+            <mat-icon>add</mat-icon>
+        </button>
+    </section>
+
+    <section class="search-container">
+        <mat-form-field appearance="outline" class="search-input">  
+            <mat-label>Nombre del paciente</mat-label>
+            <input matInput [formControl]="name" (keyup)="search()">
+            <mat-icon matSuffix>search</mat-icon>
+        </mat-form-field>
+    </section> 
+
+
+</section>

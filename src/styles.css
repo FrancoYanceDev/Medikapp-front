@@ -1,1 +1,53 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+    --font-title : 18px;
+    --font-subtitle: 17px;
+    --font-paragraph: 15px;
+}
+
+
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+
+/*Dialog*/
+
+.create-update{
+    width: 90vw;
+    height: 350px;
+
+
+}
+.create-update .mat-dialog-container{
+    padding: 0;
+    margin: 0;
+}
+
+.delete{
+    width: 90vw;
+    height: 200px;
+}
+.delete .mat-dialog-container{
+    padding: 0;
+    margin: 0;
+}
+
+/*Snack Bar*/
+.ok{
+    background-color: blue;
+}
+
+.error{
+    background-color: red;
+}

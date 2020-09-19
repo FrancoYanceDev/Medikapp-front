@@ -1,0 +1,44 @@
+<section class="container">
+
+    <section class="header">
+        <h2>Ingresar paciente</h2>
+    </section>
+
+    <section class="body">
+        <form class="form" [formGroup]="form">
+            <mat-form-field>
+                <mat-label>Nombre del paciente</mat-label>
+                <input matInput required  formControlName="nombre" type="text"> 
+                <mat-error *ngIf="this.form.get('nombre').getError('required') ">
+                    El nombre del paciente es requerido
+                </mat-error >
+            </mat-form-field>
+
+
+            <mat-form-field>
+                <mat-label>Telèfono</mat-label>
+                <input matInput required  formControlName="telefono" type="tel">
+                <mat-error *ngIf="this.form.get('telefono').getError('required') ">
+                    El telèfono del paciente es requerido
+                </mat-error>
+            </mat-form-field>
+
+
+            <mat-form-field>
+                <mat-label>Direcciòn</mat-label>
+                <input matInput required  formControlName="direccion" type="text">
+                <mat-error *ngIf="this.form.get('direccion').getError('required') ">
+                    La direcciòn del paciente es requerido
+                </mat-error >
+            </mat-form-field>
+        </form>
+    </section>
+    <section class="actions">
+        <button mat-flat-button class="cancelar" (click)="close(null)">
+            Cancelar
+        </button>
+        <button mat-flat-button color="primary" (click)="save()" [disabled]="!form.valid"> 
+            Guardar
+        </button>
+    </section>
+</section>

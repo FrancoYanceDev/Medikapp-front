@@ -1,0 +1,62 @@
+.header-contaner{
+    height: 200px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.title{
+    height: 70px;
+    width: 100%;
+    color: white;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.create{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 20px;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(230,230,230,1);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(230,230,230,1);
+    box-shadow: 0px 0px 5px 0px rgb(221, 221, 221);
+    flex-grow: 1;
+    margin-bottom: 2px;
+}
+
+.search-container{
+    background-color: rgb(245, 248, 255);
+    width: 100%;
+    padding-top: 10px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+.search-input{
+    width: 90%;
+    background-color: white;
+    padding-top: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 6px;
+}
+
+
+
+
+/*Diseño de tablet y Desktop*/
+
+
+@media only screen and (min-width: 800px) {
+    .search-input{
+        width: 700px;
+    }
+
+    .create{
+        padding-right: 10%;
+    }
+  }

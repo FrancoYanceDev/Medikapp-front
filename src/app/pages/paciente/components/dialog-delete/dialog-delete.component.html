@@ -1,0 +1,17 @@
+<section class="container">
+    <section class="header">
+        <h2>Eliminaciòn</h2>
+    </section>
+    <section class="body">
+        <p>Comfirmar la eliminaciòn del paciente {{paciente.nombre}}</p>
+    </section>
+    <section class="actions">
+        <button mat-flat-button class="cancelar" (click)="close(null)">
+            Cancelar
+        </button>
+        <button mat-flat-button color="primary" (click)="delete()">
+            Confirmar
+        </button>
+    </section>
+    
+</section>
